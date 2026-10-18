@@ -1,0 +1,5 @@
+talk.religion.misc -> soc.religion.christian: 23
+rec.motorcycles -> rec.autos: 20
+talk.religion.misc -> alt.atheism: 17
+comp.os.ms-windows.misc -> comp.sys.ibm.pc.hardware: 16
+sci.electronics -> rec.autos: 14

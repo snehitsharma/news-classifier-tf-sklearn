@@ -1,0 +1,5 @@
+comp.os.ms-windows.misc -> comp.sys.ibm.pc.hardware: 24
+talk.religion.misc -> soc.religion.christian: 24
+rec.motorcycles -> rec.autos: 17
+talk.politics.guns -> talk.politics.misc: 16
+sci.electronics -> rec.autos: 14

@@ -1,0 +1,10 @@
+Run date: 2026-10-18
+Machine: Windows 11, CPU only (TensorFlow has no GPU support on native Windows)
+Python 3.13, TensorFlow 2.21.0, Keras 3.15.1, scikit-learn 1.9.1, MLflow 3.17.1, numpy 2.5.4
+Data: 20 Newsgroups (headers, footers, quotes removed), 18,846 posts, stratified 70/15/15, seed 42
+Split sizes: train 13,192 / val 2,827 / test 2,827
+Runs: one run per model, default settings. Single seed, so small differences are not meaningful.
+Baseline note: the first baseline run searched C in {1, 10, 30}; the best (30) sat at the edge of the grid, so the
+search was widened to {1, 10, 30, 100, 300} using the validation split only (best C = 100). The first run scored
+test accuracy 0.7432 and macro-F1 0.7376; the final run 0.7421 and 0.7367. Both runs are in the MLflow history.
+Reproduce: python src/baseline_sklearn.py --c-values 1 10 30 100 300 ; python src/train_tf.py ; python src/compare.py
